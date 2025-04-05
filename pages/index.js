@@ -1,57 +1,44 @@
-// pages/index.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan & Niaz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .video-container {
+      padding: 56.25% 0 0 0;
+      position: relative;
+      max-width: 100%;
+      height: auto;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Ryan & Niaz's Website</h1>
+  <p>Watch our Engagement Video below:</p>
 
-export default function Home() { return ( <div className="relative w-full h-screen overflow-hidden text-white font-sans"> {/* Background image */} <div className="absolute inset-0 z-0"> <img
-src="/bg.jpg"
-alt="Ryan and Niaz Proposal"
-className="w-full h-full object-cover opacity-70"
-/> <div className="absolute inset-0 bg-black bg-opacity-50" /> </div>
-
-{/* Foreground content */}
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-    <h1 className="text-5xl md:text-7xl font-bold drop-shadow-xl mb-4 animate-fadeIn">
-      Ryan & Niaz
-    </h1>
-    <p className="text-xl md:text-2xl mb-2 animate-fadeIn delay-150">
-      Are getting married on
-    </p>
-    <p className="text-3xl font-medium mb-6 animate-fadeIn delay-300">
-      August 24, 2025
-    </p>
-    <p className="text-lg md:text-xl mb-8 animate-fadeIn delay-500">
-      Our wedding website is coming soon.
-    </p>
-    <a
-      href="#rsvp"
-      className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-opacity-90 transition animate-fadeIn delay-700"
-    >
-      RSVP Now
-    </a>
+  <div class="video-container">
+    <iframe 
+      src="https://player.vimeo.com/video/1072709437?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+      frameborder="0" 
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+      title="Ryan+Niaz 03.09.2024 Engagement Party 5min Highlight BELOVE PRODUCTION">
+    </iframe>
   </div>
 
-  <style jsx>{`
-    .animate-fadeIn {
-      animation: fadeIn 1s ease forwards;
-      opacity: 0;
-    }
-    .delay-150 {
-      animation-delay: 0.15s;
-    }
-    .delay-300 {
-      animation-delay: 0.3s;
-    }
-    .delay-500 {
-      animation-delay: 0.5s;
-    }
-    .delay-700 {
-      animation-delay: 0.7s;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-  `}</style>
-</div>
-
-); }
-
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
