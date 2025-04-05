@@ -1,25 +1,20 @@
 export default function Home() {
   return (
-    <div style={{
-      position: 'fixed',
-      top: 0, left: 0,
-      width: '100vw',
-      height: '100vh',
-      overflow: 'hidden',
-      zIndex: -1
-    }}>
+    <div style={{ margin: 0, padding: 0, overflow: 'hidden', height: '100vh' }}>
       <iframe
-        src="https://player.vimeo.com/video/1072709437?autoplay=1&muted=1&loop=1&background=1"
+        src="https://player.vimeo.com/video/1072709437?autoplay=1&muted=1&background=1"
+        frameBorder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
         style={{
           position: 'absolute',
-          top: 0, left: 0,
-          width: '100%',
-          height: '100%',
-          border: 'none'
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
         }}
-        allow="autoplay; fullscreen"
-        allowFullScreen
-      />
+        title="Ryan+Niaz Engagement Video"
+      ></iframe>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
   );
 }
