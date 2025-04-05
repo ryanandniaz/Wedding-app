@@ -1,2 +1,3 @@
 # Ryan & Niaz Wedding App
-This is a simplified upload version.
+
+This is the Next.js version of the wedding site.
