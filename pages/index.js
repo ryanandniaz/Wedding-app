@@ -5,16 +5,17 @@ export default function Home() {
         src="https://player.vimeo.com/video/1072709437?autoplay=1&muted=1&background=1"
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
+        allowFullScreen
         style={{
           position: 'absolute',
           top: 0,
           left: 0,
           width: '100vw',
           height: '100vh',
+          border: 'none',
         }}
-        title="Ryan+Niaz Engagement Video"
+        title="Ryan + Niaz Engagement Video"
       ></iframe>
-      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
   );
 }
